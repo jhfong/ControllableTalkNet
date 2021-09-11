@@ -52,7 +52,7 @@ torch.set_grad_enabled(False)
 if CPU_PITCH:
     tf.config.set_visible_devices([], "GPU")
 # DICT_PATH = os.path.join(RUN_PATH, "horsewords.clean")
-DICT_PATH = "/content/merged.dict.txt"
+DICT_PATH = os.path.join(RUN_PATH, "merged.dict.txt")
 
 app.title = "Controllable TalkNet"
 app.layout = html.Div(
