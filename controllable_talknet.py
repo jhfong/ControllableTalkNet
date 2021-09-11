@@ -526,7 +526,7 @@ def load_dictionary(dict_path):
     with open(dict_path, "r", encoding="utf8") as f:
         for l in f.readlines():
             word = l.split("  ")
-            assert len(word) == 2
+            # assert len(word) == 2
             arpadict[word[0].strip().upper()] = word[1].strip()
     return arpadict
 
